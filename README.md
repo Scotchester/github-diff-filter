@@ -61,6 +61,7 @@ Is it actually a second bookmarklet?_
 
 - Insert checkboxes next to each file in the Diff Stats list for one-click hiding of that file.
 - Make the file diffs themselves collapsible on demand.
+  - Proof of concept courtesy of @himedlooff: <https://gist.github.com/himedlooff/9673813>
 
 
 ## Potential Chrome extension
