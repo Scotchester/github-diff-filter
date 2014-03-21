@@ -20,6 +20,12 @@ $('[data-path*=".min"]').parent().hide();
 ```
 
 
+## Proof of concept Chrome extension
+
+Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
+for loading this repository as an unpacked extension.
+
+
 ## Roadmap
 
 Some general, not-set-in-stone ideas for feature buildout order.
