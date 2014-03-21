@@ -20,6 +20,21 @@ $('[data-path*=".min"]').parent().hide();
 ```
 
 
+## Proof of concept Chrome extension
+
+![Chrome Extension Screenshot](chrome-extension-screenshot.png)
+
+First rename `manifest-sample.json` to `manifest.json`.
+
+Then in `manifest.json` update the `matches` value under `content_scripts`.
+Since the jQuery selectors are geared for GHE you'd want to use a matching
+pattern like fake-ghe-domain/*/*/compare/* so the script only runs on compare
+view pages.
+
+Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
+for loading this repository as an unpacked extension.
+
+
 ## Roadmap
 
 Some general, not-set-in-stone ideas for feature buildout order.
