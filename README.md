@@ -29,7 +29,7 @@ First rename `manifest-sample.json` to `manifest.json`.
 Then in `manifest.json` update the `matches` value under `content_scripts`.
 Since the jQuery selectors are geared for GHE you'd want to update the patterns
 provided to point to your GitHub Enterprise domain.
-Currently they target comparison and pull=request pages.
+Currently they target comparison and pull request pages.
 More on tweaking the matching patterns can be found
 [here]("http://developer.chrome.com/extensions/content_scripts#match-patterns-globs").
 
