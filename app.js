@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var $dif = $('.js-details-container');
+  var $dif = $('[data-diff-num]');
 
   // Remove from Diff Stats list:
   $('a[href^="#diff"]:contains(".min")').parent().hide();
