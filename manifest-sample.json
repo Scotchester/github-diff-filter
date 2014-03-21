@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "GitHub Diff Filter",
+  "description": "A Chrome extension to allow you to filter the list of files in GitHub's comparison views.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://developer.chrome.com/extensions/content_scripts#match-patterns-globs"],
+      "js": ["jquery-1.11.0.min.js", "app.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
