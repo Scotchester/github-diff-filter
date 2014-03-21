@@ -6,7 +6,11 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "matches": ["http://developer.chrome.com/extensions/content_scripts#match-patterns-globs"],
+      "matches": [
+        "ghe-url/*/*/compare/*",
+        "ghe-url/*/*/pull/*/files"
+      ],
+      "css": ["app.css"],
       "js": ["jquery-1.11.0.min.js", "app.js"],
       "run_at": "document_end"
     }

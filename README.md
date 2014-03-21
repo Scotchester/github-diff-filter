@@ -27,9 +27,11 @@ $('[data-path*=".min"]').parent().hide();
 First rename `manifest-sample.json` to `manifest.json`.
 
 Then in `manifest.json` update the `matches` value under `content_scripts`.
-Since the jQuery selectors are geared for GHE you'd want to use a matching
-pattern like fake-ghe-domain/*/*/compare/* so the script only runs on compare
-view pages.
+Since the jQuery selectors are geared for GHE you'd want to update the patterns
+provided to point to your GitHub Enterprise domain.
+Currently they target comparison and pull=request pages.
+More on tweaking the matching patterns can be found
+[here]("http://developer.chrome.com/extensions/content_scripts#match-patterns-globs").
 
 Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
 for loading this repository as an unpacked extension.
