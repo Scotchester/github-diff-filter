@@ -1,4 +1,13 @@
+
+.tipsy {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/bower_components/tipsy/src/images/tipsy.gif');
+}
+
+.diff-state-collapsed {
+    height: auto !important;
+}
+
 .diff-review .octicon,
 .diff-collapse .octicon {
-  margin-right: 0 !important;
+    margin-right: 0 !important;
 }

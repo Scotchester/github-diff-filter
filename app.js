@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var $dif = $('[data-diff-num]');
+  var $diff = $('[data-diff-num]');
 
   // Remove from Diff Stats list:
   $('a[href^="#diff"]:contains(".min")').parent().hide();
@@ -9,27 +9,30 @@ $(document).ready(function(){
   $('[data-path*=".min"]').parent().hide();
 
   // Diff Collapsing
-  $dif.each(function(index){
+  $diff.each(function(index){
 
     var html = {
       iconCollapse:   '<span class="octicon octicon-chevron-up"></span>',
       iconExpand:     '<span class="octicon octicon-chevron-down"></span>',
       iconCheck:      '<span class="octicon octicon-check"></span>',
-      reviewButton:   '<a href="#" class="button minibutton diff-review"></a>',
-      collapseButton: '<a href="#" class="button minibutton diff-collapse"></a>',
+      reviewButton:   '<a href="#" class="button minibutton tooltipped diff-review" title="Mark as reviewed"></a>',
+      collapseButton: '<a href="#" class="button minibutton tooltipped diff-collapse" title="Expand/collapse"></a>',
       buttonFix:      '<code></code>'
     };
 
-    var $thisDif = $(this);
-    var $buttons = $thisDif.find('.meta .actions .button-group');
+    var $thisDiff = $(this);
+    var $buttons = $thisDiff.find('.meta .actions .button-group');
     var $review = $(html.reviewButton).html(html.iconCheck + html.buttonFix);
     var $collapse = $(html.collapseButton).html(html.iconCollapse + html.buttonFix);
 
     $buttons.append($review);
     $buttons.append($collapse);
 
-    $review = $thisDif.find('.diff-review');
-    $collapse = $thisDif.find('.diff-collapse');
+    $review = $thisDiff.find('.diff-review');
+    $collapse = $thisDiff.find('.diff-collapse');
+
+    $review.tipsy();
+    $collapse.tipsy();
 
     $collapse.on('click', function(e){
       var $this = $(this);
@@ -43,6 +46,7 @@ $(document).ready(function(){
         $this.html(html.iconCollapse + html.buttonFix);
       }
       $this.html(newHTML);
+      $thisDiff.toggleClass('diff-state-collapsed');
       getDiffFromButton($this).toggle();
     });
 
@@ -55,7 +59,7 @@ $(document).ready(function(){
     });
 
     function getDiffFromButton($button) {
-      return $button.parents('.js-details-container').find('.data, .image');
+      return $button.parents('.js-details-container').find('.data, .image, .view-modes');
     }
 
     function getContainerFromButton($button) {
