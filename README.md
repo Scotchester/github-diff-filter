@@ -24,7 +24,8 @@ $('[data-path*=".min"]').parent().hide();
 
 In `manifest.json` update the `matches` value under `content_scripts`.
 Since the jQuery selectors are geared for GHE you'd want to use a matching
-like fake-ghe-domain/*/*/compare/* so the script only runs on compare view pages.
+pattern like fake-ghe-domain/*/*/compare/* so the script only runs on compare
+view pages.
 
 Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
 for loading this repository as an unpacked extension.
