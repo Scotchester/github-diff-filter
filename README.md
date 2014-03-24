@@ -31,7 +31,7 @@ Since the jQuery selectors are geared for GHE you'd want to update the patterns
 provided to point to your GitHub Enterprise domain.
 Currently they target comparison and pull request pages.
 More on tweaking the matching patterns can be found
-[here]("http://developer.chrome.com/extensions/content_scripts#match-patterns-globs").
+[here](http://developer.chrome.com/extensions/content_scripts#match-patterns-globs).
 
 Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
 for loading this repository as an unpacked extension.
