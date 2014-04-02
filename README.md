@@ -24,16 +24,35 @@ $('[data-path*=".min"]').parent().hide();
 
 ![Chrome Extension Screenshot](chrome-extension-screenshot.png)
 
-First rename `manifest-sample.json` to `manifest.json`.
+### Installing the extension
 
-Then in `manifest.json` update the `matches` value under `content_scripts`.
-Since the jQuery selectors are geared for GHE you'd want to use a matching
-pattern like fake-ghe-domain/*/*/compare/* so the script only runs on compare
-view pages.
-
-Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
+1. Clone this repo and `cd` into its root
+2. `cp manifest-sample.json manifest.json` - Renames `manifest-sample.json`.
+3. In `manifest.json` update the `matches` values under `content_scripts`.
+If you have a private instance of Github Enterprise you'll want to edit
+`manifest.json` and update the `matches` values under `content_scripts` to
+point to your GHE domain.
+Currently the extension targets comparison and pull request pages.
+More on tweaking the matching patterns can be found
+[here](http://developer.chrome.com/extensions/content_scripts#match-patterns-globs).
+4. Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
 for loading this repository as an unpacked extension.
 
+### Contributing
+
+#### Requirements
+
+- [npm](https://npmjs.org/)
+- [bower](http://bower.io/#installing-bower)
+- [grunt-cli](http://gruntjs.com/getting-started)
+- That's it! NPM will help you install everything else you need.
+
+#### Workflow
+
+1. Clone this repo and `cd` into its root
+2. `npm install` - Initializes Grunt in this folder and installs dependencies.
+3. `bower install` - Downloads third party libraries used in this extension.
+4. `grunt bower` - Moves the files we need from `bower_components` to `vendor`.
 
 ## Roadmap
 
