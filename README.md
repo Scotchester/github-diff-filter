@@ -1,5 +1,6 @@
-github-diff-filter
-==================
+# github-diff-filter
+
+A bookmarklet to allow you to filter the list of files in GitHub's comparison views.
 
 When viewing a commit or pull request with a large number of modified files or lines,
 it might be helpful to have the ability to filter that list of files on the fly so that you can:
@@ -7,32 +8,34 @@ it might be helpful to have the ability to filter that list of files on the fly 
 - ignore things that need no review or can't practically be reviewed (e.g., minified files)
 
 
-## Proof of concept
+## Getting Started
 
-These lines can be run in the browser console to hide all files whose names contain the string `.min`:
+1. Open up [`dist/github-diff-filter.min.js`](https://github.com/Scotchester/github-diff-filter/blob/master/dist/github-diff-filter.min.js).
+2. Copy the entirety of its contents.
+3. Create a new bookmark in your browser and paste what you copied (and _only_
+   what you copied) into the URL field.
+4. Visit a GitHub comparison page (e.g., the **Files Changed** tab on a Pull Request)
+   and click the bookmarklet you just created.
+5. Enter a query into the field and press `Return` or click the **Hide** button.
+6. Behold the magical disappearing files!
 
-```js
-// Remove from Diff Stats list:
-$('a[href^="#diff"]:contains(".min")').parent().hide();
 
-// Remove the actual file diffs:
-$('[data-path*=".min"]').parent().hide();
-```
+## Release History
+
+### v1.0.0 – April 1, 2014
+
+First release! Allows for simple hiding of files matching your query. Tested on
+Google Chrome 31+.
 
 
 ## Roadmap
 
 Some general, not-set-in-stone ideas for feature buildout order.
 
-### v1.0
+### v1.0.1
 
-- Bookmarklet that pops up a small form over the page.
-- Form has one text field and a submit button.
-- On submit, the two commands described above in the **proof of concept** are run,
-  using whatever is in the text field as the arguments to the
-  `contains` function and `data-path` attribute selector.
-  (I.e., replacing `.min` in the examples given.)
-- Pop up stays open to allow for subsequent commands to be input; has close button to dismiss.
+- Add unit tests.
+- Test in more browsers.
 
 ### v1.1
 
@@ -64,7 +67,6 @@ Is it actually a second bookmarklet?_
   - Proof of concept courtesy of @himedlooff: <https://gist.github.com/himedlooff/9673813>
 
 
-## Potential Chrome extension
+## Chrome Extension in development
 
-This would deserve its own repo, but I wanted to mention that it might be cool to implement
-as a Chrome extension, as well, that could load automatically when visiting a diff page.
+Check out the [chrome-ext branch](https://github.com/Scotchester/github-diff-filter/tree/chrome-ext/)!

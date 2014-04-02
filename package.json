@@ -1,0 +1,44 @@
+{
+  "name": "github-diff-filter",
+  "version": "1.0.0",
+  "description": "A bookmarklet to allow you to filter the list of files in GitHub's comparison views.",
+  "keywords": [
+    "bookmarklet",
+    "github",
+    "javascript",
+    "filter"
+  ],
+  "author": {
+    "name": "Scott Cranfill",
+    "email": "scott@scottcranfill.com"
+  },
+  "homepage": "https://github.com/Scotchester/github-diff-filter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Scotchester/github-diff-filter.git"
+  },
+  "bugs": "https://github.com/Scotchester/github-diff-filter/issues",
+  "licenses": [
+    {
+      "type": "Public Domain",
+      "url": "https://github.com/Scotchester/github-diff-filter/blob/master/TERMS.md"
+    }
+  ],
+  "main": "src/app.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-qunit": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-include-replace": "latest",
+    "grunt-text-replace": "latest",
+    "jit-grunt": "latest",
+    "load-grunt-tasks": "latest",
+    "time-grunt": "latest"
+  }
+}
