@@ -3,10 +3,10 @@ $(document).ready(function(){
   var $diff = $('[data-diff-num]');
 
   // Remove from Diff Stats list:
-  $('a[href^="#diff"]:contains(".min")').parent().hide();
+  // $('a[href^="#diff"]:contains(".min")').parent().hide();
 
   // Remove the actual file diffs:
-  $('[data-path*=".min"]').parent().hide();
+  // $('[data-path*=".min"]').parent().hide();
 
   // Diff Collapsing
   $diff.each(function(index){
