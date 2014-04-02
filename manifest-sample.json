@@ -7,10 +7,10 @@
   "content_scripts": [
     {
       "matches": [
-        "ghe-url/*/*/compare/*",
-        "ghe-url/*/*/pull/*/files",
         "https://github.com/*/*/compare/*",
-        "https://github.com/*/*/pull/*/files"
+        "https://github.com/*/*/pull/*/files",
+        "https://ghe.domain/*/*/compare/*",
+        "https://ghe.domain/*/*/pull/*/files"
       ],
       "css": [
         "vendor/tipsy/tipsy.css",

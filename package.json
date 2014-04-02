@@ -1,7 +1,7 @@
 {
   "name": "github-diff-filter",
-  "version": "0.1.0",
-  "description": "A Chrome extension to allow you to filter the list of files in GitHub's comparison views.",
+  "version": "1.0.0",
+  "description": "A Google Chrome extension to allow you to filter the list of files in GitHub's comparison views.",
   "repository": {
     "type": "git",
     "url": "git://github.com/himedlooff/github-diff-filter.git"
