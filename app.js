@@ -15,8 +15,8 @@ $(document).ready(function(){
       iconCollapse:   '<span class="octicon octicon-chevron-up"></span>',
       iconExpand:     '<span class="octicon octicon-chevron-down"></span>',
       iconCheck:      '<span class="octicon octicon-check"></span>',
-      reviewButton:   '<a href="#" class="button minibutton tooltipped diff-review" aria-label="Mark as reviewed"></a>',
-      collapseButton: '<a href="#" class="button minibutton tooltipped diff-collapse" aria-label="Expand/collapse"></a>',
+      reviewButton:   '<a href="#" class="button minibutton diff-review" aria-label="Mark as reviewed"></a>',
+      collapseButton: '<a href="#" class="button minibutton diff-collapse" aria-label="Expand/collapse"></a>',
       buttonFix:      '<code></code>'
     };
 
@@ -31,8 +31,8 @@ $(document).ready(function(){
     $review = $thisDiff.find('.diff-review');
     $collapse = $thisDiff.find('.diff-collapse');
 
-    $review.tipsy({title: 'aria-label', gravity: 's'});
-    $collapse.tipsy({title: 'aria-label', gravity: 's'});
+    $review.tipsy({title: 'aria-label', gravity: 'n'});
+    $collapse.tipsy({title: 'aria-label', gravity: 'n'});
 
     $collapse.on('click', function(e){
       var $this = $(this);
