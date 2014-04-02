@@ -24,16 +24,26 @@ $('[data-path*=".min"]').parent().hide();
 
 ![Chrome Extension Screenshot](chrome-extension-screenshot.png)
 
-First rename `manifest-sample.json` to `manifest.json`.
+### Requirements
 
-Then in `manifest.json` update the `matches` value under `content_scripts`.
-Since the jQuery selectors are geared for GHE you'd want to update the patterns
-provided to point to your GitHub Enterprise domain.
+- [npm](https://npmjs.org/)
+- [grunt-cli](http://gruntjs.com/getting-started)
+- That's it! NPM will help you install everything else you need.
+
+### Building and running the extension
+
+1. Clone this repo and `cd` into its root
+2. `npm install` - Initializes Grunt in this folder and installs dependencies.
+3. `bower install` - Downloads third party libraries used in this extension.
+4. `grunt bower` - Moves the files we need from `bower_components` to `vendor`.
+5. `mv manifest-sample.json manifest.json` - Renames `manifest-sample.json`.
+6. In `manifest.json` update the `matches` value under `content_scripts`.
+Since the jQuery selectors are geared for GitHub Enterprise you'd want to update
+the patterns provided to point to your GHE domain.
 Currently they target comparison and pull request pages.
 More on tweaking the matching patterns can be found
 [here](http://developer.chrome.com/extensions/content_scripts#match-patterns-globs).
-
-Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
+7. Follow these [instructions](http://developer.chrome.com/extensions/getstarted#unpacked)
 for loading this repository as an unpacked extension.
 
 

@@ -1,6 +1,6 @@
 
 .tipsy {
-    background-image: url('chrome-extension://__MSG_@@extension_id__/bower_components/tipsy/src/images/tipsy.gif');
+    background-image: url('chrome-extension://__MSG_@@extension_id__/vendor/tipsy/tipsy.gif');
 }
 
 .diff-state-collapsed {

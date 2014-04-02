@@ -24,7 +24,22 @@
     "tests"
   ],
   "dependencies": {
-    "tipsy": "~0.1.7",
-    "jquery": "~2.1.0"
+    "jquery": "~2.1.0",
+    "tipsy": "~0.1.7"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "": [
+        "dist/jquery.min.js",
+        "dist/jquery.min.map"
+      ]
+    },
+    "tipsy": {
+      "": [
+        "src/stylesheets/tipsy.css",
+        "src/images/tipsy.gif",
+        "src/javascripts/jquery.tipsy.js"
+      ]
+    }
   }
 }
