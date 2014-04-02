@@ -27,6 +27,7 @@ $('[data-path*=".min"]').parent().hide();
 ### Requirements
 
 - [npm](https://npmjs.org/)
+- [bower](http://bower.io/#installing-bower)
 - [grunt-cli](http://gruntjs.com/getting-started)
 - That's it! NPM will help you install everything else you need.
 
