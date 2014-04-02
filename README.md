@@ -27,7 +27,7 @@ $('[data-path*=".min"]').parent().hide();
 ### Installing the extension
 
 1. Clone this repo and `cd` into its root
-2. `mv manifest-sample.json manifest.json` - Renames `manifest-sample.json`.
+2. `cp manifest-sample.json manifest.json` - Renames `manifest-sample.json`.
 3. In `manifest.json` update the `matches` values under `content_scripts`.
 If you have a private instance of Github Enterprise you'll want to edit
 `manifest.json` and update the `matches` values under `content_scripts` to
