@@ -8,7 +8,9 @@
     {
       "matches": [
         "ghe-url/*/*/compare/*",
-        "ghe-url/*/*/pull/*/files"
+        "ghe-url/*/*/pull/*/files",
+        "https://github.com/*/*/compare/*",
+        "https://github.com/*/*/pull/*/files"
       ],
       "css": [
         "bower_components/tipsy/src/stylesheets/tipsy.css",
