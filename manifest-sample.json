@@ -13,19 +13,19 @@
         "https://github.com/*/*/pull/*/files"
       ],
       "css": [
-        "bower_components/tipsy/src/stylesheets/tipsy.css",
+        "vendor/tipsy/tipsy.css",
         "app.css"
       ],
       "js": [
-        "bower_components/jquery/dist/jquery.min.js",
-        "bower_components/tipsy/src/javascripts/jquery.tipsy.js",
+        "vendor/jquery/jquery.min.js",
+        "vendor/tipsy/jquery.tipsy.js",
         "app.js"
       ],
       "run_at": "document_end"
     }
   ],
   "web_accessible_resources": [
-    "bower_components/tipsy/src/images/tipsy.gif",
-    "bower_components/jquery/dist/jquery.min.map"
+    "vendor/tipsy/tipsy.gif",
+    "vendor/jquery/jquery.min.map"
   ]
 }
