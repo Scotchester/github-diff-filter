@@ -1,6 +1,9 @@
 # github-diff-filter
 
-A Google Chrome extension to allow you to filter the list of files in GitHub's comparison views.
+A Google Chrome extension to help you review pull requests by allowing you to
+filter the list of files in GitHub's comparison views.
+
+---
 
 When viewing a commit or pull request with a large number of modified files or lines,
 it might be helpful to have the ability to filter that list of files on the fly so that you can:

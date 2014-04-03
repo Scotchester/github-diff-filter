@@ -5,7 +5,7 @@
   "authors": [
     "Mike Morici <Michael.Morici@cfpb.gov>"
   ],
-  "description": "A Chrome extension to allow you to filter the list of files in GitHub's comparison views.",
+  "description": "A Google Chrome extension to help you review pull requests by allowing you to filter the list of files in GitHub's comparison views.",
   "main": "app.js",
   "keywords": [
     "Chrome",
