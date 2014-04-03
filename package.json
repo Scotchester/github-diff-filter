@@ -1,6 +1,6 @@
 {
   "name": "github-diff-filter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A Google Chrome extension to help you review pull requests by allowing you to filter the list of files in GitHub's comparison views.",
   "repository": {
     "type": "git",

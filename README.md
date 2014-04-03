@@ -56,15 +56,20 @@ More on tweaking the matching patterns can be found
 
 ## Release History
 
-### v1.0.0 – April 2, 2014
+### v0.1.0 – April 3, 2014
 
-First release! Allows you to collapse and/or mark-as-reviewed individual file diffs.
+First release! Extension can be loaded "unpacked" from the Extensions page.
+Allows you to collapse and/or mark-as-reviewed individual file diffs.
 Tested on Google Chrome 31+.
 
 
 ## Roadmap
 
 Some general, not-set-in-stone ideas for future features.
+
+### v1.0 – Release on Chrome Web Store
+
+- Incorporate tests for the JS.
 
 ### v1.1 – Add pop-up filter panel
 
