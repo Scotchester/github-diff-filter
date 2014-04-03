@@ -1,26 +1,4 @@
 {
-  "name": "github-diff-filter",
-  "version": "0.1.0",
-  "description": "A Google Chrome extension to help you review pull requests by allowing you to filter the list of files in GitHub's comparison views.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/himedlooff/github-diff-filter.git"
-  },
-  "keywords": [
-    "github",
-    "diff",
-    "code",
-    "review"
-  ],
-  "author": "Michael Morici",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/himedlooff/github-diff-filter/issues"
-  },
-  "homepage": "https://github.com/himedlooff/github-diff-filter",
-  "engines": {
-    "node": ">=0.8.0"
-  },
   "devDependencies": {
     "grunt": "latest",
     "grunt-bower-task": "~0.3.2"
