@@ -1,21 +1,29 @@
+.header .container {
+    position: relative;
+}
+
 #gdf {
-    width: 200px;
-    padding: 1em;
-    position: fixed;
+    box-sizing: border-box;
+    width: 180px;
+    padding: 0.5em 1em;
+    position: absolute;
     top: -4px;
-    right: 10px;
-    background: #CCD5E3;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    left: 1000px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: -4px 5px 0 0 rgba(0, 0, 0, 0.2);
+    text-shadow: none;
     
     &-title {
-        padding-bottom: 2px;
-        border-bottom: 1px solid #EEE;
-        margin-bottom: 10px;
-        text-shadow: 0 1px 2px #FFF;
+        margin-bottom: 8px;
+        color: #FFF;
         font-size: 2em;
     }
+    & label {
+        color: #F1F2F2;
+    }
     &-hide-input {
-        width: 118px;
+        width: 100px;
         min-height: 26px;
         padding: 3px 8px;
         margin-top: 4px;
@@ -26,8 +34,9 @@
     }
 
     &-close-btn {
-        margin: 10px 4px -4px 0;
+        margin: 8px 4px 0;
         float: right;
+        color: #7FB8E6;
         cursor: pointer;
     }
 }

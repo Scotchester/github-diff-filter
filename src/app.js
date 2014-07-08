@@ -8,7 +8,7 @@
 
   // Attach the CSS to the head and the overlay markup to the body.
   $('head').append(css);
-  $('body').append(form);
+  $('.header .container').append(form);
 
   // Create the callback function to bind to the event listeners below.
   window.gdfHide = function (event) {

@@ -22,6 +22,11 @@ it might be helpful to have the ability to filter that list of files on the fly 
 
 ## Release History
 
+### v1.0.1 - July 9, 2014
+
+- Design improvements.
+- Now tested on Safari 6, Internet Explorer 9.
+
 ### v1.0.0 – April 1, 2014
 
 First release! Allows for simple hiding of files matching your query. Tested on
@@ -31,11 +36,6 @@ Google Chrome 31+.
 ## Roadmap
 
 Some general, not-set-in-stone ideas for feature buildout order.
-
-### v1.0.1
-
-- Add unit tests.
-- Test in more browsers.
 
 ### v1.1
 
