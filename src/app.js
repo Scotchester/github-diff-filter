@@ -7,7 +7,7 @@
   var form = '@@include("../temp/html/form.html")';
 
   // If not already done, attach the CSS to the head and the overlay markup to the body.
-  if ($('#gdf').length == 0) {
+  if ($('#gdf').length === 0) {
     $('head').append(css);
     $('.header .container').append(form);
   }
@@ -20,19 +20,20 @@
 
       if (query !== '') {
         // console.log("github-diff-filter: hiding paths matching '" + query + "'");
-        
-        // Remove from Diff Stats list.
-        $('a[href^="#diff"]:contains(' + query + ')').parent().hide();
 
-        // Remove the actual file diffs.
-        $('[data-path*="' + query + '"]').parent().hide();
+        $.each(query.split(','), function (key, value) {
+          // Remove from Diff Stats list.
+          $('a[href^="#diff"]:contains(' + value + ')').parent().hide();
+
+          // Remove the actual file diffs.
+          $('[data-path*="' + value + '"]').parent().hide();
+        });
 
         // Enable the "Show all files" button
         $('#gdf-show-all-btn').removeAttr('disabled');
 
         // Clear the input field and refocus on it for entering another value.
         $('#gdf-hide-input').val('').focus();
-
       }
     }
   };
