@@ -20,7 +20,7 @@
         font-size: 2em;
     }
     & label {
-        color: #F1F2F2;
+        color: #EEE;
     }
     &-hide-input {
         width: 100px;
@@ -33,7 +33,19 @@
         margin-top: 4px;
     }
 
+    &-show-all-btn {
+        width: 100px;
+        margin: 8px 0 4px;
+        font-weight: normal;
+
+        &:disabled {
+            background: #CCC;
+            color: #999;
+        }
+    }
+
     &-close-btn {
+        padding: 4px 0;
         margin: 8px 4px 0;
         float: right;
         color: #7FB8E6;
