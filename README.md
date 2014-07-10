@@ -22,6 +22,11 @@ it might be helpful to have the ability to filter that list of files on the fly 
 
 ## Release History
 
+### v1.1.0 - July 10, 2014
+
+- Adds button to unhide all previously-hidden files.
+- Adds ability to enter multiple comma-separated arguments into the text field.
+
 ### v1.0.1 - July 9, 2014
 
 - Design improvements.
@@ -36,11 +41,6 @@ Google Chrome 31+.
 ## Roadmap
 
 Some general, not-set-in-stone ideas for feature buildout order.
-
-### v1.1
-
-- Add button to unhide all previously-hidden files.
-- Add ability to enter multiple comma-separated arguments into the text field.
 
 ### v1.2
 
