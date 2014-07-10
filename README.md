@@ -10,10 +10,11 @@ it might be helpful to have the ability to filter that list of files on the fly 
 
 ## Getting Started
 
-1. Open up [`dist/github-diff-filter.min.js`](https://github.com/Scotchester/github-diff-filter/blob/master/dist/github-diff-filter.min.js).
+1. Open up
+   [`dist/github-diff-filter.min.js`](https://github.com/Scotchester/github-diff-filter/blob/master/dist/github-diff-filter.min.js).
 2. Copy the entirety of its contents.
-3. Create a new bookmark in your browser and paste what you copied (and _only_
-   what you copied) into the URL field.
+3. Create a new bookmark in your browser and paste what you copied
+   (and _only_ what you copied) into the URL field.
 4. Visit a GitHub comparison page (e.g., the **Files Changed** tab on a Pull Request)
    and click the bookmarklet you just created.
 5. Enter a query into the field and press `Return` or click the **Hide** button.
@@ -34,13 +35,15 @@ it might be helpful to have the ability to filter that list of files on the fly 
 
 ### v1.0.0 – April 1, 2014
 
-First release! Allows for simple hiding of files matching your query. Tested on
-Google Chrome 31+.
+First release! Allows for simple hiding of files matching your query.
+Tested on Google Chrome 31+.
 
 
 ## Roadmap
 
 Some general, not-set-in-stone ideas for feature buildout order.
+It is unclear at what point we'll run into the character limit for a bookmark URL,
+at which point it will become much more difficult to add new features.
 
 ### v1.2
 
@@ -69,4 +72,5 @@ Is it actually a second bookmarklet?_
 
 ## Chrome Extension in development
 
-Check out the [chrome-ext branch](https://github.com/Scotchester/github-diff-filter/tree/chrome-ext/)!
+@himedloof is working on some similar ideas in the form of a Chrome extension.
+Link forthcoming.
