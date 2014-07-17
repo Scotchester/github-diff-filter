@@ -24,7 +24,7 @@ it might be helpful to have the ability to filter that list of files on the fly 
    ![](screenshot-02.png)
 6. Behold the magical disappearing files!
 
-   ![](screenshot-03.png)
+![](screenshot-03.png)
 
 
 ---
