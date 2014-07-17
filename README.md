@@ -17,8 +17,17 @@ it might be helpful to have the ability to filter that list of files on the fly 
    (and _only_ what you copied) into the URL field.
 4. Visit a GitHub comparison page (e.g., the **Files Changed** tab on a Pull Request)
    and click the bookmarklet you just created.
+
+   ![](screenshot-01.png)
 5. Enter a query into the field and press `Return` or click the **Hide** button.
+
+   ![](screenshot-02.png)
 6. Behold the magical disappearing files!
+
+   ![](screenshot-03.png)
+
+
+---
 
 
 ## Release History
@@ -68,6 +77,28 @@ Is it actually a second bookmarklet?_
 - Insert checkboxes next to each file in the Diff Stats list for one-click hiding of that file.
 - Make the file diffs themselves collapsible on demand.
   - Proof of concept courtesy of @himedlooff: <https://gist.github.com/himedlooff/9673813>
+
+
+## Getting involved
+
+We welcome your feedback and contributions.
+Filing issues and submitting pull requests is the best way to help out.
+If you want to contribute code, pick an item off the roadmap above and do it!
+It doesn't have to go in the proposed order.
+If something farther down the list speaks to you more, implement it!
+
+- [Find out about contributing](CONTRIBUTING.md)
+- [File a bug](https://github.com/cfpb/github-diff-filter/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
+
+
+---
+
+
+## Open source licensing info
+
+1. [TERMS](TERMS.md)
+2. [LICENSE](LICENSE)
+3. [CFPB Source Code Policy](https://github.com/cfpb/source-code-policy/)
 
 
 ## Chrome Extension in development
